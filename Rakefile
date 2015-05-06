@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "omgtex"
   gem.homepage = "http://github.com/x3ro/omgtex"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Basically runs pdflatex for you.}
+  gem.description = %Q{Builds your LaTeX files by running pdflatex an appropriate* amount of times.}
   gem.email = "lucas@x3ro.de"
   gem.authors = ["Lucas Jenss"]
   gem.executables = ["omgtex"]
