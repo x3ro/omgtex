@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["Lucas Jenss"]
   s.date = "2015-05-06"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Builds your LaTeX files by running pdflatex an appropriate* amount of times."
   s.email = "lucas@x3ro.de"
   s.executables = ["omgtex"]
   s.extra_rdoc_files = [
@@ -31,13 +31,14 @@ Gem::Specification.new do |s|
     "lib/omgtex.rb",
     "lib/omgtex/options.rb",
     "lib/omgtex/runner.rb",
+    "omgtex.gemspec",
     "test/helper.rb",
     "test/test_omgtex.rb"
   ]
   s.homepage = "http://github.com/x3ro/omgtex"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Basically runs pdflatex for you."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
