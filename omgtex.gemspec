@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Lucas Jenss"]
-  s.date = "2015-05-06"
+  s.date = "2015-05-17"
   s.description = "Builds your LaTeX files by running pdflatex an appropriate* amount of times."
   s.email = "lucas@x3ro.de"
   s.executables = ["omgtex"]
