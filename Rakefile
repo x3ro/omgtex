@@ -17,11 +17,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "omgtex"
   gem.homepage = "http://github.com/x3ro/omgtex"
   gem.license = "MIT"
-  gem.summary = %Q{Basically runs pdflatex for you.}
-  gem.description = %Q{Builds your LaTeX files by running pdflatex an appropriate* amount of times.}
-  gem.email = "lucas@x3ro.de"
-  gem.authors = ["Lucas Jenss"]
+  gem.summary = %Q{Essentially runs *TeX the appropriate number of times}
+  gem.description = %Q{Builds your *TeX files by running *tex an appropriate amount of times}
+  gem.email = "public@x3ro.de"
+  gem.authors = ["Lucas Jenß"]
   gem.executables = ["omgtex"]
+  gem.cert_chain = ["certs/fresskoma.pem"]
+  gem.signing_key = File.expand_path("~/.ssh/keys/rubygems/gem-private_key.pem")
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

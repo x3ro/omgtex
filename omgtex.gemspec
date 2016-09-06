@@ -10,10 +10,11 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Lucas Jenss"]
-  s.date = "2015-05-17"
-  s.description = "Builds your LaTeX files by running pdflatex an appropriate* amount of times."
-  s.email = "lucas@x3ro.de"
+  s.authors = ["Lucas Jen\u{df}"]
+  s.cert_chain = ["certs/fresskoma.pem"]
+  s.date = "2016-09-06"
+  s.description = "Builds your *TeX files by running *tex an appropriate amount of times"
+  s.email = "public@x3ro.de"
   s.executables = ["omgtex"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -37,8 +38,9 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/x3ro/omgtex"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.2"
-  s.summary = "Basically runs pdflatex for you."
+  s.rubygems_version = "2.5.1"
+  s.signing_key = "/Users/lucas/.ssh/keys/rubygems/gem-private_key.pem"
+  s.summary = "Essentially runs *TeX the appropriate number of times"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
