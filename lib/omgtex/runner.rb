@@ -11,7 +11,7 @@ module Omgtex
       filename = $1
       filetype = $2
 
-      latexCommand = "pdflatex #{options[:latexOptions].join(' ')}"
+      latexCommand = "#{options[:typesetter]} #{options[:latexOptions].join(' ')}"
 
       file = "'#{file}'"
       pdffile = "'#{filename}.pdf'"

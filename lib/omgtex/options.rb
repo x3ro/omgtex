@@ -6,6 +6,8 @@ module Omgtex
     def self.parse!
       options = {:latexOptions => [ ]}
 
+      options[:typesetter] = "pdflatex"
+
       optparse = OptionParser.new do|opts|
         opts.banner = "Usage: omgtex [options] file.tex"
 
@@ -26,6 +28,14 @@ module Omgtex
 
         opts.on('-e', '--shell-escape', 'Shell escape-ish') do
           options[:latexOptions].push("-shell-escape")
+        end
+
+        opts.on('-x', '--xelatex', 'Use XeLaTeX instead of pdflatex') do
+          options[:typesetter] = "xelatex"
+        end
+
+        opts.on('-t TYPESETTER', '--typesetter', 'Use this executable for typesetting LaTeX') do |l|
+          options[:typesetter] = l
         end
 
         opts.on('-h', '--help', 'Display this message') do
