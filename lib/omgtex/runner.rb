@@ -17,6 +17,8 @@ module Omgtex
       pdffile = "'#{filename}.pdf'"
       auxfile = "'#{filename}.aux'"
 
+      current_dir = Dir.pwd
+
       cmd  = " if [ -e '#{auxfile}' ]; then HASH=$(md5 -q #{auxfile}); fi"
       cmd += " && #{latexCommand} #{file}"
       cmd += " && makeglossaries #{filename}" if options[:glossary]
@@ -27,8 +29,13 @@ module Omgtex
       cmd += "        && #{latexCommand} #{file} ;"
       cmd += "    fi"
       cmd += " && open #{pdffile}" if options[:openpdf]
+      cmd += " && rm -f *.aux *.glo *.ist *.log *.out" unless options[:dontclean]
 
-      Kernel.exec(cmd)
+      if options[:dryrun]
+        puts cmd
+      else
+        Kernel.exec(cmd)
+      end
     end
 
   end

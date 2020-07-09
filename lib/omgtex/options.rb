@@ -38,6 +38,14 @@ module Omgtex
           options[:typesetter] = l
         end
 
+        opts.on('-n', '--dry-run') do
+          options[:dryrun] = true
+        end
+
+        opts.on('-d', '--dont-clean') do
+          options[:dontclean] = true
+        end
+
         opts.on('-h', '--help', 'Display this message') do
           puts opts
           exit
