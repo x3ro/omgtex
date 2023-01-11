@@ -1,6 +1,6 @@
-# omgtex (Ruby version, no longer maintained)
+# omgtex (no longer maintained)
 
-> No longer maintained. See [omgtex](https://github.com/x3ro/omgtex) instead.
+> You probably want to use [latexmk](https://tex.stackexchange.com/tags/latexmk/info) instead :)
 
 Building LaTeX has never been easier™. A revolutionary tool to disrupt the entire industry of running `pdflatex` three times in a row. 
 
